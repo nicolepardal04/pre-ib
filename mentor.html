@@ -160,7 +160,7 @@
 
     .bar:after {
       right: 50%;
-      f
+      
     }
 
     /* active state */
@@ -382,11 +382,11 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
               <!--Put the z-index as 1 if u just want it static and the label above the input-->
               <label style="position: relative; z-index: 1; color: black;">Are you comfortable with audio and video calls?</label>
-              <input id="names-inline" type="text" class="half-half" id="video" name="video" required style="position: relative; width: 95%;">
+              <input  type="text" class="half-half" id="vid" name="video" required style="position: relative; width: 95%;">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
               <label style="position: relative; z-index: 1; color: black;">Preferred Gender?</label>
-              <input id="names-inline" type="text" class="half-half" id="gender" name="gender" required style="position: relative; width: 95%;">
+              <input type="text" class="half-half" id="gender" name="gender" required style="position: relative; width: 95%;">
             </div>
           </div>
 
@@ -398,7 +398,7 @@
               <p class="grey-text mt-0 pt-0 ms-3">
                 <em>Any comments, important information for the mentor to know, etc. </em>
               </p>
-                  <textarea style="width: 95%; color: black;" name="comments" class="text-area ms-3 mb-5" name="name"></textarea>
+                  <textarea style="width: 95%; color: black;" id="comments" name="comments" class="text-area ms-3 mb-5"></textarea>
             </div>
             <button type="submit">Submit</button>
           </div>
@@ -415,15 +415,10 @@
   crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
- <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-  <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
   <script src="main.js"></script>
 
 
